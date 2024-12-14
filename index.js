@@ -15,7 +15,7 @@ const corsOptions = {
 };
 
 mongoose
-  .connect("mongodb+srv://satyakarthik:Satya12@@cluster0.d31vs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  .connect("mongodb+srv://satyakarthikvelivela:5vitoqqtYnevs5I0@cluster0.k5knn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => console.log("Mongodb Connected successfully"))
   .catch((error) => console.log(error));
 
