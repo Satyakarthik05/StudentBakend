@@ -8,14 +8,14 @@ const verifyToken = require("./middlewares/VerifyStudentToken");
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: ["http://localhost:5173", "http://localhost:5174","https://student-frontnd.vercel.app/","https://student-frontnd.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization", "token"],
   credentials: true,
 };
 
 mongoose
-  .connect("mongodb://localhost:27017/Student_Droupout")
+  .connect("mongodb+srv://satyakarthik:Satya12@@cluster0.d31vs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => console.log("Mongodb Connected successfully"))
   .catch((error) => console.log(error));
 
